@@ -24,5 +24,10 @@ class MainActivity : AppCompatActivity() {
 //                "Please enter your name"
 //            }
 //        }
+
+        supportFragmentManager
+            .beginTransaction()
+            .add(R.id.fragmentContainerView2, DisplayNameFragment())
+            .commit()
     }
 }
